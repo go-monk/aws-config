@@ -32,7 +32,6 @@ func main() {
 		case config.SharedConfig:
 			region = source.Region
 		}
-
 		fmt.Fprintf(writer, "%d\t%T\t%s\n", i+1, source, region)
 	}
 	writer.Flush()
